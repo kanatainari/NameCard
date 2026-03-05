@@ -1,0 +1,18 @@
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+
+namespace WinFormsApp4
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Random rand = new Random();
+            this.BackColor = Color.FromArgb(rand.Next(256), rand.Next(256), rand.Next(256));
+        }
+    }
+}
