@@ -35,26 +35,30 @@
             label3 = new Label();
             label4 = new Label();
             pictureBox1 = new PictureBox();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
             button1.Font = new Font("맑은 고딕", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
-            button1.Location = new Point(350, 305);
+            button1.Location = new Point(592, 535);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(154, 39);
+            button1.Size = new Size(220, 65);
             button1.TabIndex = 0;
-            button1.Text = "B U T T O N";
+            button1.Text = "배경 색상 변경";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(530, 329);
+            label1.Location = new Point(849, 575);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(142, 15);
+            label1.Size = new Size(209, 25);
             label1.TabIndex = 1;
             label1.Text = "kt24643269@gmail.com";
             // 
@@ -62,9 +66,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("맑은 고딕", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 129);
-            label2.Location = new Point(350, 253);
+            label2.Location = new Point(592, 449);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(170, 30);
+            label2.Size = new Size(257, 45);
             label2.TabIndex = 2;
             label2.Text = "학번 : 25017001";
             // 
@@ -72,9 +77,10 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("맑은 고딕", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 129);
-            label3.Location = new Point(350, 203);
+            label3.Location = new Point(592, 365);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(322, 30);
+            label3.Size = new Size(492, 45);
             label3.TabIndex = 3;
             label3.Text = "수원대학교 컴퓨터SW학과 2학년";
             // 
@@ -84,33 +90,65 @@
             label4.BackColor = SystemColors.ControlText;
             label4.Font = new Font("맑은 고딕", 36F, FontStyle.Bold, GraphicsUnit.Point, 129);
             label4.ForeColor = SystemColors.Control;
-            label4.Location = new Point(350, 110);
+            label4.Location = new Point(592, 210);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(172, 65);
+            label4.Size = new Size(256, 96);
             label4.TabIndex = 4;
             label4.Text = "강민영";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(75, 110);
+            pictureBox1.Location = new Point(181, 210);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(245, 234);
+            pictureBox1.Size = new Size(364, 390);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.MouseEnter += pictureBox1_MouseEnter;
+            pictureBox1.MouseLeave += pictureBox1_MouseLeave;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("맑은 고딕", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            button2.Location = new Point(181, 643);
+            button2.Name = "button2";
+            button2.Size = new Size(364, 51);
+            button2.TabIndex = 6;
+            button2.Text = "사진 변경";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.ControlDarkDark;
+            button3.Font = new Font("맑은 고딕", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            button3.ForeColor = SystemColors.Control;
+            button3.Location = new Point(592, 643);
+            button3.Name = "button3";
+            button3.Size = new Size(466, 51);
+            button3.TabIndex = 7;
+            button3.Text = "G  i  t  h  u  b";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1284, 868);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -126,5 +164,7 @@
         private Label label3;
         private Label label4;
         private PictureBox pictureBox1;
+        private Button button2;
+        private Button button3;
     }
 }
