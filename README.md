@@ -1,4 +1,4 @@
-# MybusinessCard
+# MyBusinessCard
 
 SNS Link : 
 Clicking the GitHub or Instagram button opens my SNS page in a web browser.
